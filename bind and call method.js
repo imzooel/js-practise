@@ -25,5 +25,5 @@ const student2 = {
 student.getInfo.bind(student2)();
 
 // while .call() directly call the function.
-student.getInfo.call(student2);
+student.getInfo(student));
 
