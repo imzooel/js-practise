@@ -6,12 +6,16 @@ const friends = [
     {name: "Maruf", age: 23, roll: 20097, present: false}
 ];
 // map  //returns array
-const allName = friends.map(eachName => eachName.name);
+const allName = friends.map(eachObj => eachObj.name);
 console.log(allName);
 
 // forEach  
-const allName2 = friends.forEach(eachName => console.log(eachName.name));
+const allName2 = friends.forEach(eachObj => console.log(eachObj.name));
 
-// filter //returns array
-const filterNames = friends.filter(eachName => eachName.present !== false);
+// filter
+const filterNames = friends.filter(eachObj => eachObj.present !== false);
 console.log(filterNames);
+
+// find
+const findRoll = friends.find(eachObj => eachObj.roll === 20097);
+console.log(findRoll);
